@@ -10,4 +10,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+const left = 0;
 reportWebVitals();
