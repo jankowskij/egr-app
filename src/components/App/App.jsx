@@ -1,4 +1,9 @@
 import '../../scss/style.scss';
+import '../../scss/media.scss';
+import { ReactComponent as IconMenu } from './../../image/svg/menu.svg'
+import { ReactComponent as IconLogo } from './../../image/svg/logo.svg'
+import { ReactComponent as IconAuth } from './../../image/svg/auth.svg'
+import { ReactComponent as IconNotify } from './../../image/svg/notify.svg'
 
 function App() {
   return (
@@ -6,17 +11,19 @@ function App() {
       <div className="MainToning"></div>
       <div className="MainHeader">
         <div className="Logo">
-          <img src="" alt="" />
-          <h3>RNK</h3>
+          <IconLogo className="iconLogo" />
+          <div className="textLogo">RNK</div>
         </div>
         <div className="ButtonHeader">
-          <img src="../../image/svg/HamburgMengu.svg" alt="HamburgMenu" className="iconHeader" />
-          <img src="../../image/svg/HamburgMengu.svg" alt="HamburgMenu" className="iconHeader" />
-          <img src="../../image/svg/HamburgMengu.svg" alt="HamburgMenu" className="iconHeader" />
+          <IconNotify className="iconMenu" />
+          <IconAuth className="iconMenu" />
+          <IconMenu className="iconMenu" />
         </div>
       </div>
-      <div className="MainFooter"></div>
-      <div>321</div>
+      <div className="MainFooter">
+        <div>321</div>
+      </div>
+
     </div>
   );
 }
