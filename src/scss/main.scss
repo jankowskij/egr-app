@@ -97,6 +97,17 @@ li {
     user-select: none;
 }
 
+.buttonMainClick {
+    @extend %flex-row-between;
+    align-items: center;
+    padding: 7px 12px;
+    border: 1px solid #8B8B8B;
+    border-radius: 6px;
+    width: auto;
+    margin: 3px 13px;
+    user-select: none;
+}
+
 .buttonTitle {
     font-weight: 400;
     font-size: 14px;
@@ -126,6 +137,7 @@ li {
     align-items: center;
     justify-content: center;
     z-index: 99999;
+    transition: .4s;
 }
 
 .form {

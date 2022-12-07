@@ -16,12 +16,11 @@ const App = (props) => {
     <div className="MainContainer">
       <div className="MainToning"></div>
       {props.content.isActive == true ? <SignInForm setNoActive={props.setNoActive} /> : null}
-
       <div className="MainHeader">
         <Logo />
         <div className="buttonWrap">
           <Language />
-          <SignIn setActive={props.setActive} />
+          <SignIn setActive={props.setActive} setEventClick={props.setEventClick} setEventNotClick={props.setEventNotClick} content={props.content} />
         </div>
       </div>
 

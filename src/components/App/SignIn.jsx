@@ -5,7 +5,8 @@ const SignIn = (props) => {
 
     return (
         <>
-            <div onClick={props.setActive} className="buttonMain">
+            <div onClick={props.setActive} onMouseDown={props.setEventClick} onMouseUp={props.setEventNotClick}
+                className={props.content.isClick === true ? "buttonMainClick" : "buttonMain"}>
                 <UserSVG className="buttonIcon" />
                 <div className="buttonTitle">Sign in</div>
             </div>

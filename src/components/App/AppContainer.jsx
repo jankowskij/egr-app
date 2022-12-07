@@ -1,6 +1,6 @@
 import App from "./App";
 import { connect } from "react-redux";
-import { setActiveLogin, setNoActiveLogin } from "../../redux/reducers/authReducer";
+import { setActiveLogin, setEventClick, setNoActiveLogin, setEventNotClick } from "../../redux/reducers/authReducer";
 
 
 
@@ -17,7 +17,13 @@ const mapDispatchToProps = (dispatch) => {
         },
         setNoActive: (data) => {
             dispatch(setNoActiveLogin(data));
-        }
+        },
+        setEventClick: (data) => {
+            dispatch(setEventClick(data));
+        },
+        setEventNotClick: (data) => {
+            dispatch(setEventNotClick(data));
+        },
     }
 }
 
