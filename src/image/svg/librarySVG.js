@@ -7,10 +7,10 @@ import { ReactComponent as IconUser } from './user.svg'
 
 
 
-export const DribbbleSVG = IconDribbble;
-export const LogoSVG = IconLogo;
-export const LanguageSVG = IconLanguage;
-export const TwitterSVG = IconTwitter;
-export const GithubSVG = IconGithub;
-export const UserSVG = IconUser;
+export const DribbbleSVG =  IconDribbble;
+export const LogoSVG =      IconLogo;
+export const LanguageSVG =  IconLanguage;
+export const TwitterSVG =   IconTwitter;
+export const GithubSVG =    IconGithub;
+export const UserSVG =      IconUser;
 

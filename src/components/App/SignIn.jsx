@@ -1,10 +1,11 @@
 import { UserSVG } from "../../image/svg/librarySVG";
 
 
-const SignIn = () => {
+const SignIn = (props) => {
+
     return (
         <>
-            <div className="buttonMain">
+            <div onClick={props.setActive} className="buttonMain">
                 <UserSVG className="buttonIcon" />
                 <div className="buttonTitle">Sign in</div>
             </div>

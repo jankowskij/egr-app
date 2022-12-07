@@ -1,42 +1,32 @@
 import '../../scss/main.scss';
 import '../../scss/media.scss';
 
-import { DribbbleSVG, LogoSVG, GithubSVG, TwitterSVG } from '../../image/svg/librarySVG';
 import SignIn from './SignIn';
 import Language from './Language';
 import Logo from './Logo';
+import SocialLinks from './SocialLinks';
+import SignInForm from './SignInForm';
 
 
 
 
-const App = () => {
+const App = (props) => {
+
   return (
     <div className="MainContainer">
       <div className="MainToning"></div>
-
+      {props.content.isActive == true ? <SignInForm setNoActive={props.setNoActive} /> : null}
 
       <div className="MainHeader">
-
         <Logo />
-
         <div className="buttonWrap">
           <Language />
-          <SignIn />
+          <SignIn setActive={props.setActive} />
         </div>
-
       </div>
 
-
       <div className="MainFooter">
-        <div className="buttonMain">
-          <GithubSVG className="buttonIcon" />
-        </div>
-        <div className="buttonMain">
-          <DribbbleSVG className="buttonIcon" />
-        </div>
-        <div className="buttonMain">
-          <TwitterSVG className="buttonIcon" />
-        </div>
+        <SocialLinks />
       </div>
 
     </div>
