@@ -1,27 +1,42 @@
-import '../../scss/style.scss';
+import '../../scss/main.scss';
 import '../../scss/media.scss';
-import { ReactComponent as IconMenu } from './../../image/svg/menu.svg'
-import { ReactComponent as IconLogo } from './../../image/svg/logo.svg'
-import { ReactComponent as IconAuth } from './../../image/svg/auth.svg'
-import { ReactComponent as IconNotify } from './../../image/svg/notify.svg'
 
-function App() {
+import { DribbbleSVG, LogoSVG, GithubSVG, TwitterSVG } from '../../image/svg/librarySVG';
+import SignIn from './SignIn';
+import Language from './Language';
+import Logo from './Logo';
+
+
+
+
+const App = () => {
   return (
     <div className="MainContainer">
       <div className="MainToning"></div>
+
+
       <div className="MainHeader">
-        <div className="Logo">
-          <IconLogo className="iconLogo" />
-          <div className="textLogo">RNK</div>
+
+        <Logo />
+
+        <div className="buttonWrap">
+          <Language />
+          <SignIn />
         </div>
-        <div className="ButtonHeader">
-          <IconNotify className="iconMenu" />
-          <IconAuth className="iconMenu" />
-          <IconMenu className="iconMenu" />
-        </div>
+
       </div>
+
+
       <div className="MainFooter">
-        <div>321</div>
+        <div className="buttonMain">
+          <GithubSVG className="buttonIcon" />
+        </div>
+        <div className="buttonMain">
+          <DribbbleSVG className="buttonIcon" />
+        </div>
+        <div className="buttonMain">
+          <TwitterSVG className="buttonIcon" />
+        </div>
       </div>
 
     </div>

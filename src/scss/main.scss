@@ -5,7 +5,7 @@
 
 
 .red {
-    background: $basic-red-color;
+    background: tomato;
 }
 
 
@@ -55,18 +55,18 @@ li {
     height: 100vh;
 }
 
-
 .MainHeader {
     @extend %flex-row-between;
 }
 
 .MainFooter {
-    @extend %flex-row-between;
+    @extend %flex-row-start;
 }
 
 .Logo {
     @extend %flex-row-between;
     align-items: center;
+    margin: 0 5px;
 }
 
 .iconLogo {
@@ -81,27 +81,72 @@ li {
     color: #fff;
 }
 
-.ButtonHeader {
+.buttonWrap {
     @extend %flex-row-between;
     align-items: center;
 }
 
-.iconMenu {
-    width: 22px;
-    height: 22px;
+.buttonMain {
+    @extend %flex-row-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #8B8B8B;
+    border-radius: 6px;
+    width: auto;
+    margin: 0 10px;
+    user-select: none;
+}
+
+.buttonTitle {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    margin: 0 5px;
+}
+
+.buttonIcon {
+    width: 20px;
+    height: 20px;
     fill: #fff;
-    transition: 0.4s;
-    margin-right: 40px;
+    margin: 0 5px;
 }
 
-.iconMenu:last-child {
-    margin-right: 0;
-    width: 22px;
-    height: 22px;
-}
-
-.iconMenu:hover{
+.buttonMain:hover {
+    background: rgba(217,217,217, .15);
     cursor: pointer;
-    fill: $tomato-color;
 }
+
+
+
+
+
+
+
+
+
+
+
+// .iconMenu {
+//     width: 22px;
+//     height: 22px;
+//     fill: #fff;
+//     transition: 0.4s;
+//     margin-right: 40px;
+// }
+
+// .iconMenu:last-child {
+//     margin-right: 0;
+//     width: 24px;
+//     height: 24px;
+// }
+
+// .iconMenu:hover{
+//     cursor: pointer;
+//     fill: $tomato-color;
+// }
+
+
+
+
 

@@ -15,6 +15,12 @@
     justify-content: space-between;
 }
 
+%flex-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 
 /************* Other ******************
 *****************************************/
