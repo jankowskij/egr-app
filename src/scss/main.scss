@@ -117,13 +117,20 @@ li {
     cursor: pointer;
 }
 
+.containerForm {
+    @extend %absulute-toning;
+    height: 100vh;
+    background: $basic-toner-color-popup;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .form {
     width: 500px;
     height: 350px;
     background-color: white;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
 }
 
 
