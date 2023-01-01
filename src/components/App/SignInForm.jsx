@@ -5,7 +5,10 @@ const SignInForm = (props) => {
     return (
         <div className="containerForm">
             <div className="form">
-                <div onClick={props.setNoActive}>Close</div>
+                <div className="formHeader">
+                <div onClick={props.setNoActive} className="formButtonClose">X</div>
+                </div>
+                
             </div>
         </div>
     )
