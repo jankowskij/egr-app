@@ -13,4 +13,6 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
+
+const test = 'APP';
 reportWebVitals();
